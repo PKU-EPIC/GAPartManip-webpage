@@ -1,1 +1,350 @@
-<p>Under construction...</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>GAPartManip: A Large-scale Part-centric Dataset for Material-Agnostic Articulated Object Manipulation</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <style>
+
+    img {
+        margin-bottom: 10px; 
+    }
+    body {
+        font-family: 'Google Sans', sans-serif;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 24px;
+    }
+
+    p {
+        font-family: 'Castoro', serif;
+        font-size: 20px;
+    }
+
+    /* Add more custom styles here as needed */
+  </style>
+  
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">GAPartManip: A Large-scale Part-centric Dataset for Material-Agnostic Articulated Object Manipulation</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://cwb0106.github.io/" target="_blank">Wenbo Cui<sup>1,2,3</sup></a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://chengyzhao.github.io/" target="_blank">Chengyang Zhao<sup>4,5</sup></a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://songlin.github.io/" target="_blank">Songlin Wei<sup>4,8</sup></a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="https://jzhzhang.github.io/" target="_blank">JiaZhao Zhang<sup>4,8</sup></a>
+              <span class="author-block">
+                <a href="https://geng-haoran.github.io/" target="_blank">Haoran Geng<sup>4,6</sup></a>
+              <span class="author-block">
+                <a href="https://pku-epic.github.io/GAPartManip/" target="_blank">Yaran Chen<sup>7</sup></a>
+              <span class="author-block">
+                <a href="https://pku-epic.github.io/GAPartManip/" target="_blank">Haoran Li<sup>1,2</sup></a>
+              <span class="author-block">
+                <a href="https://hughw19.github.io/" target="_blank">He Wang<sup>3,4,8</sup><sup>&dagger;</sup></a>
+              </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">
+                        <span><sup>1</sup>Institute of Automation, Chinese Academy of Sciences</span>, 
+                        <span><sup>2</sup>School of Artificial Intelligence, University of Chinese Academy of Sciences</span>,
+                        <span><sup>3</sup>Beijing Academy of Artificial Intelligence</span>, 
+                        <span><sup>4</sup>CFCS, School of Computer Science, Peking University</span>
+                        <span><sup>5</sup>Carnegie Mellon University</span>
+                        <span><sup>6</sup>University of California, Berkeley</span>
+                        <span><sup>7</sup>Xi'an Jiaotong-Liverpool University</span>
+                        <span><sup>8</sup>Galbot</span>
+                    </span>
+                    <br>
+                    <span class="eql-cntrb">
+                      <small><sup>*</sup>Equal Contribution</small>
+                      <small><sup>&dagger;</sup>Corresponding Author</small>
+                    </span>
+                    <br>
+                    <span class="author-block">
+                        ICRA 2025
+                    </span>
+                    
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2411.18276" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://pku-epic.github.io/GAPartManip/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Comming Soon)</span>
+                  
+                <span class="link-block">
+                  <a href="https://pku-epic.github.io/GAPartManip/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Dataset (Comming Soon)</span>
+                  </a>
+                </span>
+
+
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/GAPartManip.mp4"
+        type="video/mp4">
+      </video>
+      <!-- 
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+      -->
+    </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Effectively manipulating articulated objects in household scenarios is a crucial step toward achieving general embodied artificial intelligence. Mainstream research in 3D vision has primarily focused on manipulation through depth perception and pose detection. However, in real-world environments, these methods often face challenges due to imperfect depth perception, such as with transparent lids and reflective handles. Moreover, they generally lack the diversity in part-based interactions required for flexible and adaptable manipulation. To address these challenges, we introduced a large-scale part-centric dataset for articulated object manipulation that features both photo-realistic material randomization and detailed annotations of part-oriented, scene-level actionable interaction poses. We evaluated the effectiveness of our dataset by integrating it with several state-of-the-art methods for depth estimation and interaction pose prediction. Additionally, we proposed a novel modular framework that delivers superior and robust performance for generalizable articulated object manipulation. Our extensive experiments demonstrate that our dataset significantly improves the performance of depth perception and actionable interaction pose prediction in both simulation and real-world scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Dataset Teaser -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">Dataset</h2>
+      <img src="static/images/Teaser.jpg" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:50%; height:auto;">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified">
+                <p>
+                  We introduce a large-scale part-centric dataset for material-agnostic articulated object manipulation. It encompasses <strong>19</strong> common household articulated categories, totaling <strong>918</strong> object instances, <strong>240K</strong> photo-realistic rendering images, and <strong>8B</strong> scene-level actionable interaction poses. GAPartManip enables robust zero-shot sim-to-real transfer for accomplishing articulated object manipulation tasks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+
+<!-- Pipeline -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">Framework</h2>
+      <img src="static/images/pipeline.jpg" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:100%; height:auto;">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified">
+                <p>
+                  Given IR images and raw depth map, the depth reconstruction module first performs depth recovery. Subsequently, the pose prediction module generates a 7-DoF actionable pose and a 6-DoF post-grasping motion for interaction based on the reconstructed depth. Finally, the local planner module carries out the action planning and execution.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+<!-- Pipeline -->
+
+<!-- Results -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop content">
+      <h2 class="title is-3">Results</h2>
+      <h3 class="title is-4">Cross-Category Depth Estimation</h3>
+      <img src="static/images/depth_result.png" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:70%; height:auto;">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified">
+                <p>
+                   Qualitative Results for Depth Estimation in the Real World. 
+                   Our refined depth maps are cleaner and more accurate than the ones from the baseline, indicating that our depth reconstruction module is more robust for transparent and translucent lids and small handles.
+                   Zoom in to better observe small parts like handles and knobs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<h3 class="title is-4">Cross-Category Interaction Pose Prediction</h3>
+      <img src="static/images/Pose_result.png" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:70%; height:auto;">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified">
+                <p>
+                  Qualitative Comparison of Actionable Pose Prediction in Simulation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<h3 class="title is-4">Part-aware Articulaed Object Manipulation</h3>
+      <img src="static/images/real_demo_result.png" alt="MY ALT TEXT"/ style="display:block; margin: 30px auto; width:70%; height:auto;">
+      <div class="container is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="content has-text-justified">
+                <p>
+                   Qualitative Results For Real-world Manipulation. 
+                   The actionable poses with top scores are displayed, with the red gripper representing the top-1 pose.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+  </div>
+</div>
+<!-- Results -->
+
+  
+  
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @article{cui2024gapartmanip,
+          title={GAPartManip: A Large-scale Part-centric Dataset for Material-Agnostic Articulated Object Manipulation},
+          author={Cui, Wenbo and Zhao, Chengyang and Wei, Songlin and Zhang, Jiazhao and Geng, Haoran and Chen, Yaran and Li, Haoran and Wang, He},
+          journal={arXiv preprint arXiv:2411.18276},
+          year={2024}
+        }
+      </code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Contact</h2>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            <li> <strong>Wenbo Cui</strong>: cuiwenbo2023@ia.ac.cn </li>
+            <li> <strong>He Wang</strong>: hewang@pku.edu.cn </li>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
